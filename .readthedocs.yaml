@@ -1,10 +1,9 @@
 version: 2
 
+# Install our python package before building the docs
 python:
-  # Install our python package before building the docs
   install:
-    - method: pip
-      path: .
+    - requirements: requirements.txt
 
 build:
   os: "ubuntu-20.04"
